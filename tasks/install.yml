@@ -1,5 +1,5 @@
 ---
-- name: Instala o rabbitmq-server
+- name: Instala o Rabbitmq
   apt:
     name: rabbitmq-server
     update_cache: yes
