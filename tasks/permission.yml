@@ -1,4 +1,0 @@
----
-- name: Define permissão ao usuário openstack no Rabbitmq
-  command: rabbitmqctl set_permissions openstack ".*" ".*" ".*"
-  tags: rabbitmq
