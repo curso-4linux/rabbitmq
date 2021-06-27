@@ -1,4 +1,11 @@
 ---
 - name: Adiciona usuário openstack no Rabbitmq
-  command: rabbitmqctl add_user openstack RABBIT_PASS
+  rabbitmq_user:
+    user: openstack
+    password: RABBIT_PASS
+    vhost: /
+    configure_priv: .*
+    read_priv: .*
+    write_priv: .*
+    state: present
   tags: rabbitmq
