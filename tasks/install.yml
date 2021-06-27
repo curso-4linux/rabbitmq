@@ -1,0 +1,14 @@
+---
+- name: Instala MySQL Server
+  apt:
+    name: mariadb-server python3-pymysql
+    update_cache: yes
+  notify:
+    - Start MySQL
+  tags: banco
+- name: Inicia e ativa na inicializacao o servico mariadb
+  systemd:
+    name: mariadb
+    state: started
+    enabled: yes
+  tags: banco    
