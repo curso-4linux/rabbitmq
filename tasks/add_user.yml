@@ -1,0 +1,4 @@
+---
+- name: Adiciona usuário openstack no Rabbitmq
+  command: rabbitmqctl add_user openstack RABBIT_PASS
+  tags: rabbitmq
