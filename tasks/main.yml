@@ -4,6 +4,3 @@
 
 - name: Adiciona usuário openstack no Rabbitmq
   import_tasks: add_user.yml
- 
-- name: Define a segurança no Rabbitmq
-  import_tasks: permission.yml
